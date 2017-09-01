@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["52a9980813c503005faf56df3244b005"],"subflows":["4aa9980813c503005faf56df3244b004"],"stages":{},"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>4ea9980813c503005faf56df3244b004,52a9980813c503005faf56df3244b005</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>4ea9980813c503005faf56df3244b004,52a9980813c503005faf56df3244b005</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Test WF</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">4ea9980813c503005faf56df3244b004</start>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_id>3789d04813c503005faf56df3244b050</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:10:09</sys_updated_on>
+        <table>incident</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Test WF">4aa9980813c503005faf56df3244b004</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Test WF</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4aa9980813c503005faf56df3244b004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test WF</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="simpson" source="x_snc_simpson">c769980813c503005faf56df3244b072</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="simpson">c769980813c503005faf56df3244b072</sys_scope>
+        <sys_update_name>wf_workflow_4aa9980813c503005faf56df3244b004</sys_update_name>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:08:44</sys_updated_on>
+        <table>incident</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_id>4ea9980813c503005faf56df3244b004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:08:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Test WF">3789d04813c503005faf56df3244b050</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">4ea9980813c503005faf56df3244b004</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_id>dea9980813c503005faf56df3244b004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:08:44</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_id>52a9980813c503005faf56df3244b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:08:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Test WF">3789d04813c503005faf56df3244b050</workflow_version>
+        <x>400</x>
+        <y>150</y>
+    </wf_activity>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Workflow">f1afb4010a0a0b2c00d8f55e2372c728</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Test WF</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:09:18</sys_created_on>
+        <sys_id>e6c9980813c503005faf56df3244b020</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:09:20</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Test WF">3789d04813c503005faf56df3244b050</workflow_version>
+        <x>0</x>
+        <y>0</y>
+    </wf_activity>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e6c9980813c503005faf56df3244b020</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:09:18</sys_created_on>
+        <sys_id>2ac9980813c503005faf56df3244b020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:09:18</sys_updated_on>
+        <value>52b9d44813c503005faf56df3244b039</value>
+        <variable display_value="">f25501290a0a0b2c005133d3fe2841b3</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Test WF">e6c9980813c503005faf56df3244b020</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:09:19</sys_created_on>
+        <sys_id>2ec9980813c503005faf56df3244b020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:09:19</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">dea9980813c503005faf56df3244b004</condition>
+        <from display_value="Begin">4ea9980813c503005faf56df3244b004</from>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_id>d2a9980813c503005faf56df3244b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:08:44</sys_updated_on>
+        <to display_value="End">52a9980813c503005faf56df3244b005</to>
+    </wf_transition>
+    <wf_workflow_instance action="INSERT_OR_UPDATE">
+        <activity display_value="Test WF">e6c9980813c503005faf56df3244b020</activity>
+        <return_map/>
+        <stage/>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:09:18</sys_created_on>
+        <sys_id>52b9d44813c503005faf56df3244b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:09:18</sys_updated_on>
+        <workflow display_value="Test WF">4aa9980813c503005faf56df3244b004</workflow>
+        <workflow_version display_value="Test WF">3789d04813c503005faf56df3244b050</workflow_version>
+    </wf_workflow_instance>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>scott.starkey@snc</sys_created_by>
+        <sys_created_on>2017-09-01 21:08:44</sys_created_on>
+        <sys_id>86a9980813c503005faf56df3244b004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>scott.starkey@snc</sys_updated_by>
+        <sys_updated_on>2017-09-01 21:08:44</sys_updated_on>
+        <workflow_version display_value="Test WF">3789d04813c503005faf56df3244b050</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=4aa9980813c503005faf56df3244b004^sys_id!=3789d04813c503005faf56df3244b050">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
